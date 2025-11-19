@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foyle Roastery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top" data-page="products">
+    <header class="site-header">
+        <h1>Foyle Roastery</h1>
+        <nav aria-label="Primary">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" aria-current="page">Products</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="container">
+        <h2> Our Coffee Beans and Gear</h2>
+
+        <form id="product-filter" class="filters">
+            <label for="filter-roast">Roast</label>
+            <select name="roast" id="filter-roast">
+                <option value=""> All</option>
+                <option value="Light"> Light</option>
+                <option value="Medium"> Medium</option>
+                <option value="Dark"> Dark</option>
+            </select>
+            <button type="button" id="product-clear"> Clear</button>
+        
+        </form>
+        <section id="product-grid" class="grid">
+            <div class="card" data-roast="Light">
+                <img src="assets/coffee1.png" width="160" height="160">
+                <h3>Columbia Yirgachaffe</h3>
+                <p>Citrus, cinmanon, 250g bag of Columbia</p>
+            </div>
+            <div class="card" data-roast="Light">
+                <img src="assets/coffee2.jpg" width="160" height="160">
+                <h3>Columbia Huila</h3>
+                <p>Huila, 200g bag of Columbia</p>
+            </div>
+            <div class="card" data-roast="Medium">
+                <img src="assets/coffee3.jpg" width="160" height="160">
+                <h3>Cafe Do Brasil Huila</h3>
+                <p>Brasil, 200g bag of Cafe Finest</p>
+            </div>
+            <div class="card" data-roast="Dark">
+                <img src="assets/coffee4.jpg" width="160" height="160">
+                <h3>Arabica</h3>
+                <p>Arabica, 300g Dark</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Foyle Roastery, Derry</p>
+        <p><a href="#top">Back To Top</a></p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
